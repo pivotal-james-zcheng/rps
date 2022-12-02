@@ -9,8 +9,17 @@ import static com.xps.rps.GameResult.*;
 @RestController
 public class PlayController {
 
+    private final RoundRepository roundRepository;
+
+    public PlayController(RoundRepository roundRepository) {
+        this.roundRepository = roundRepository;
+    }
+
+
     @PostMapping("/play")
     public String play(@RequestBody PlayRequestBody requestBody) {
+        roundRepository.increment();
+
         try {
             Throw player1Throw = Throw.valueOf(requestBody.getP1().toUpperCase());
             Throw player2Throw = Throw.valueOf(requestBody.getP2().toUpperCase());

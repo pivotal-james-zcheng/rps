@@ -1,8 +1,8 @@
-package com.xps.rps;
+package com.xps.rps.history;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class InMemoryRepositoryTest {
 

@@ -1,4 +1,4 @@
-package com.xps.rps;
+package com.xps.rps.game;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -12,7 +12,7 @@ public class RPSParametrisedTest {
 
     @ParameterizedTest
     @MethodSource("rpsCases")
-    void rps(Throw p1 , Throw p2, GameResult result) {
+    void rps(Throw p1, Throw p2, GameResult result) {
         assertEquals(result, RPS.play(p1, p2));
     }
 

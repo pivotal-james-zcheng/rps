@@ -1,4 +1,4 @@
-package com.xps.rps;
+package com.xps.rps.history;
 
 import org.springframework.stereotype.Repository;
 

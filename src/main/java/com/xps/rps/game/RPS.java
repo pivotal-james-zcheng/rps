@@ -1,4 +1,4 @@
-package com.xps.rps;
+package com.xps.rps.game;
 
 public class RPS {
     public static GameResult play(Throw p1, Throw p2) {

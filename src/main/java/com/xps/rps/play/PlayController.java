@@ -1,10 +1,15 @@
-package com.xps.rps;
+package com.xps.rps.play;
 
+import com.xps.rps.game.GameResult;
+import com.xps.rps.game.RPS;
+import com.xps.rps.game.Throw;
+import com.xps.rps.history.RoundRepository;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.xps.rps.GameResult.*;
+import static com.xps.rps.game.GameResult.P1_WINS;
+import static com.xps.rps.game.GameResult.P2_WINS;
 
 @RestController
 public class PlayController {

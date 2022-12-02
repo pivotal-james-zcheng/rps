@@ -1,4 +1,4 @@
-package com.xps.rps;
+package com.xps.rps.history;
 
 
 import org.springframework.web.bind.annotation.GetMapping;

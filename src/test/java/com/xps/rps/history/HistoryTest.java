@@ -1,5 +1,6 @@
-package com.xps.rps;
+package com.xps.rps.history;
 
+import com.xps.rps.play.PlayRequestBody;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
